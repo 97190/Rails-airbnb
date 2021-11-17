@@ -1,12 +1,40 @@
+<div class="container">
 
-<h1>Simple Airbnb</h1>
-<br>
-<p>All our Flats</p>
-<br>
-All 4 flats
+  <div class="bg-danger p-2 shadow rounded">
+    <div>
+      <%= image_tag "photo.jpeg" %>
+    </div>
 
-<ul>
-  <% @flats.each do |flat| %>
-    <li><%= flat.name %></li>
-  <% end %>
-</ul>
+    <div class="bg-success">
+      <h1>Simple Airbnb</h1>
+      <p>Description</p>
+      <div class="d-flex">
+        <p class="">2 P</p>
+        <p class="pl-3">3 €</p>
+      </div>
+    </div>
+
+
+    <div class="bg-warning">
+       More info
+    </div>
+
+  </div>
+
+  <div>
+  <h2>title</h2>
+  <ul>
+    <% @flats.each do |flat| %>
+      <li><%= flat.name %></li>
+    <% end %>
+  </ul>
+  <p>Personnes</p>Price<p>
+
+  </div>
+  <br>
+  <p>All our Flats</p>
+  <br>
+  All 4 flats
+
+
+</div>
