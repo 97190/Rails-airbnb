@@ -1,0 +1,12 @@
+
+<h1>Simple Airbnb</h1>
+<br>
+<p>All our Flats</p>
+<br>
+All 4 flats
+
+<ul>
+  <% @flats.each do |flat| %>
+    <li><%= flat.name %></li>
+  <% end %>
+</ul>
